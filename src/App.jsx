@@ -1,34 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useRef, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [rad1, setRad1] = useState(0)
+  const [rad2, setRad2] = useState(0)
+  const [rad3, setRad3] = useState(0)
+  const [rad4, setRad4] = useState(0)
+
+  
+
+  function alterarBorda (){
+
+    const radius1 = (document.getElementById('rad1').value)
+    const radius2 = (document.getElementById('rad2').value)
+    const radius3 = (document.getElementById('rad3').value)
+    const radius4 = (document.getElementById('rad4').value)
+    setRad1(radius1)
+    setRad2(radius2)
+    setRad3(radius3)
+    setRad4(radius4)
+
+    console.log(rad1)
+    document.getElementById('box').style.borderRadius = `${rad1}px ${rad2}px ${rad3}px ${rad4}px` 
+  }
 
   return (
-    <>
+    <div className='main'>
+      <h1>Visualizador de Borda</h1>
+      <div className='box' id='box'></div>
+      <input className='rad1' id='rad1' type='text' maxLength={3} placeholder='00' defaultValue={0}/>
+      <input className='rad2' id='rad2' type='text' maxLength={3} placeholder='00' defaultValue={0}/>
+      <input className='rad3' id='rad3' type='text' maxLength={3} placeholder='00' defaultValue={0}/>
+      <input className='rad4' id='rad4' type='text' maxLength={3} placeholder='00' defaultValue={0}/>
+      <button onClick={alterarBorda}>Alterar Borda</button>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    </div>
   )
 }
 
