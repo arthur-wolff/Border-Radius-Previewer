@@ -1,12 +1,67 @@
 .main{
-
+  text-align: center;
+  
 }
 
 .box{
-  background: #73AD21;
+  
+  display: flex;
+  align-items: center;
+  background: #F59E90;
   padding: 25px;
   width: 200px;
   height: 200px;
   border-radius: 0px 0px 0px 0px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.rad{
+  width: 25px;
+  padding: 10px;
   margin: 10px;
+  outline: none;
+  border-radius: 10px;
+  background-color: #F5D090;
+
+}
+
+h1{
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.button{
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  outline: none;
+  cursor: pointer;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: #F5AF90;
+
+}
+
+button:hover{
+  background-color: #F5D090;
+}
+
+.copyPaste{
+  display: flex;
+  border-color: black;
+  padding: 100px;
+  background-color: #F59D00;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  width: 100px;
+
 }
