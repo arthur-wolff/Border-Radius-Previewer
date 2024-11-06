@@ -1,6 +1,10 @@
 # Border-Radius-Previewer
 Projeto derivado do repositório: https://github.com/florinpop17/app-ideas/blob/master/Projects/1-Beginner/Border-Radius-Previewer.md
 
+# Como rodar
+
+
+# Descrição do repositorio original
 **Tier:** 1-Beginner
 
 The border-radius property can have multiple values changed. Preview how the shape looks while changing these values.
@@ -19,3 +23,4 @@ The border-radius property can have multiple values changed. Preview how the sha
 
 -   [CSS3 Borders](https://www.w3schools.com/css/css3_borders.asp)
 -   [Copy to Clipboard](https://www.w3schools.com/howto/howto_js_copy_clipboard.asp)
+
